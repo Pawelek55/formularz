@@ -5,18 +5,18 @@
     <title>Formularz osobowy</title>
 </head>
 <body>
-    <form action="">
+    <form action="https://formspree.io/pawelz.zawislak@gmail.com" method="POST">
         <label for="name">Imię</label><br/>
-        <input type="text" name="name"><br/>
+        <input type="text" id="name"><br/>
         
         <label for="surname">Nazwisko</label><br/>
-        <input type="text" name="surname"><br/>
+        <input type="text" id="surname"><br/>
         
         <label for="mail">E-mail</label><br/>
-        <input type="text" name="mail"><br/>
+        <input type="email" id="mail"><br/>
         
         <label for="tel">Telefon kontaktowy</label><br/>
-        <input type="text" name="tel"><br/><br/>
+        <input type="text" id="tel"><br/><br/>
         
         <label for="gender">Płeć</label><br/>
         <input type="radio" name="gender" value="Mężczyzna">Mężczyzna<br/>
@@ -37,7 +37,7 @@
         <label for="message">Napisz do nas!</label><br/>
         <textarea name="message" id="" cols="30" rows="10"></textarea><br/>
         
-        <submit></submit>
+        <input type="submit" value="Wyślij">
 
     </form>
 </body>
