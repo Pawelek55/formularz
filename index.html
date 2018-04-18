@@ -7,16 +7,16 @@
 <body>       
        <form action="https://formspree.io/pawelz.zawislak@gmail.com" method="POST">
         <label for="name">Imię</label><br/>
-        <input type="text" id="name"><br/>
+        <input type="text" id="name" name="imie"><br/>
         
         <label for="surname">Nazwisko</label><br/>
-        <input type="text" id="surname"><br/>
+        <input type="text" id="surname" name="nazwisko"><br/>
         
         <label for="mail">E-mail</label><br/>
-        <input type="email" id="mail"><br/>
+        <input type="email" id="mail" name="e-mail"><br/>
         
         <label for="tel">Telefon kontaktowy</label><br/>
-        <input type="text" id="tel"><br/><br/>
+        <input type="text" id="tel" name="number"><br/><br/>
         
         <p>Płeć</p>
         <label for="men">Mężczyzna</label>
@@ -25,7 +25,7 @@
         <input type="radio" name="gender" id="women" value="Kobieta"><br/><br/>
         
         <label for="city">Miasto</label>
-        <select id="city">
+        <select id="city" name="town">
             <option value="krakow">Kraków</option>
             <option value="warszawa">Warszawa</option>
             <option value="gdansk">Gdańsk</option>
@@ -33,11 +33,11 @@
         
 
         <label for="agree">Zgoda dotycząca przetwarzanie danych osobowych:</label><br/><br/>
-        <input type="checkbox" id="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922). <br/><br/>
+        <input type="checkbox" id="agree" name="check">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922). <br/><br/>
 
         
         <label for="message">Napisz do nas!</label><br/>
-        <textarea id="message" cols="30" rows="10"></textarea><br/>
+        <textarea id="message" cols="30" rows="10" name="text-box"></textarea><br/>
         
         <input type="submit" value="Wyślij">
 
