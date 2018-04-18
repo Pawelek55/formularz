@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Formularz osobowy</title>
 </head>
-<body>
-    <form action="https://formspree.io/pawelz.zawislak@gmail.com" method="POST">
+<body>       
+       <form action="https://formspree.io/pawelz.zawislak@gmail.com" method="POST">
         <label for="name">Imię</label><br/>
         <input type="text" id="name"><br/>
         
@@ -18,12 +18,14 @@
         <label for="tel">Telefon kontaktowy</label><br/>
         <input type="text" id="tel"><br/><br/>
         
-        <label for="gender">Płeć</label><br/>
-        <input type="radio" name="gender" value="Mężczyzna">Mężczyzna<br/>
-        <input type="radio" name="gender" value="Kobieta">Kobieta<br/><br/>
+        <p>Płeć</p>
+        <label for="men">Mężczyzna</label>
+        <input type="radio" name="gender" id="men" value="Mężczyzna"><br/>
+        <label for="women">Kobieta</label>
+        <input type="radio" name="gender" id="women" value="Kobieta"><br/><br/>
         
-        <label for="">Miasto</label>
-        <select name="city" form="city">
+        <label for="city">Miasto</label>
+        <select id="city">
             <option value="krakow">Kraków</option>
             <option value="warszawa">Warszawa</option>
             <option value="gdansk">Gdańsk</option>
@@ -31,11 +33,11 @@
         
 
         <label for="agree">Zgoda dotycząca przetwarzanie danych osobowych:</label><br/><br/>
-        <input type="checkbox" name="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922). <br/><br/>
+        <input type="checkbox" id="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922). <br/><br/>
 
         
         <label for="message">Napisz do nas!</label><br/>
-        <textarea name="message" id="" cols="30" rows="10"></textarea><br/>
+        <textarea id="message" cols="30" rows="10"></textarea><br/>
         
         <input type="submit" value="Wyślij">
 
